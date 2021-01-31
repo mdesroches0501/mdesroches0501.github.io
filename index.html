@@ -1,61 +1,181 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Michael DesRoches's Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    
-    <body>
+<head>
+    <!-- Required meta tags -->
+    <title>Michael DesRoche's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="main-navigation"> 
-            <ul class ="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience/ResumeMichaelDesRoches.pdf">Experience</a></li>
-                <li><a href="projects/index.html">Projects</a></li>
-                <li><a href="photos/index.html">Photos</a></li>
-            </ul>
-        </div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-        <header>
-            <img src="img/family.jpg" alt="A picture of Michael DesRoches and family" class ="profile-image">
-            <h1>Hello, I'm Michael DesRoches</h1>
-            <p>My home city is Reno, Nevada</p>
-        </header>
 
-        <main>
-            <div>
-                <h2>Background</h2>
-                    <p class="card">I am an aspiring web designer that loves everything about the web. I've lived in Nevada almost my whole life and am a member of the Army National Guard stationed out in Stead. I've been a flight engineer for most of my career and am eager to to change my path to a more digital one.
-                    This is my firt website and I am continuously working on it every time I learn something new. So far, the site is built using HTML and CSS. I am not completley finished with the product but am always adding to it in my free time.
-                    To learn more about what kind of experience I bring to the table, <a href="experience/ResumeMichaelDesRoches.pdf">view my resume</a></p>
-            </div>
-
-            <div>
-                <h2>Goals</h2>
-                <p class="card">I want to increase my knowledge of backend software engineering by learnig front-end development. I am focusing on my website to try to showcase my desire to in development. After this, JavaScript and JQuery. Then, SQL database manipulation to get a better understanding of what I learned in school. My hope is that on day, all of this will connect with my C++,
-                    Python and Java experience. 
-                </p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>CPP</li>
-                    <li>JAVA</li>
-                    <li>Python</li>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
 
-        </main>
+    <!-- jumbotron -->
+    <div class="bg-light p-5 rounded-lg my-3 text-sm-center">
+        <h1 class="display-2">Michael DesRoches</h1>
+        <p class="lead">I am a Software Engineer</p>
+
+        <p class="fs-2">Available for Work</p>
+        <button type="button" class="btn btn-primary btn-lg">Contact Me</button>
+        <button type="button" class="btn btn-secondary btn-lg" href="projects">See Projects</button>
+    </div> <!-- /jumbotron -->
+
+    <!-- container -->
+    <div class="container pt-4">
+        <!-- about -->
+        <div id="about" class="row">
+            <div class="col-lg m-4">
+                <h3 class="display-6 text-muted">About Me</h3>
+                <p>Get to know me</p>
+                <img src="img/family.jpg" class="mb-4 img-fluid" alt="random images">
+            </div>
+            <div class="col-lg m-4">
+                <p class="fs-6">Who am I?</p>
+                <p class="fs-3">I am Michael DesRoches, a Fullstack Web Developer in the making</p>
+                <p>I am a recent graduate from the University of Nevada, Reno. I would love to be in a position one day to help convert a vision or idea into a useful or meaningfull product. I am continously learning and always love to try something new. Take a look at my portfoilio and lets see if my experience is the type you are looking for.</p>
+                <hr />
+                <p><strong>Name:</strong> Michael DesRoches</p>
+                <p><strong>email:</strong> mdesroches@nevada.unr.edu</p>
+                <p><strong>From:</strong> Reno, Nevada</p>
+                <a class="btn btn-dark" href="experience\ResumeMichaelDesRoches.pdf" download="Michael's Resume" target="_blank">Download Resume</a>
+            </div>
+        </div><!-- /about -->
+        <!-- skills -->
+        <h1 id="skills" class="display-6 mt-5 text-muted pt-4">Skills</h1>
+        <p class="mb-6">At my core, I am a problem solver. I use C#, JavaScript, ASP.net, SQL, Bootstrap, HTML, and CSS to bring my projects to life.</p>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="http://placeimg.com/200/100/tech" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">C# Development</h5>
+                        <p class="card-text">[text goes here]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="http://placeimg.com/200/100/arch" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">JavaScript Development</h5>
+                        <p class="card-text">[text goes here]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="http://placeimg.com/200/100/nature" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Full Stack Development</h5>
+                        <p class="card-text">[text goes here]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="http://placeimg.com/200/100/animals" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Front End Development</h5>
+                        <p class="card-text">[text goes here]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="http://placeimg.com/200/100/any/grayscale" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Database Development</h5>
+                        <p class="card-text">[text goes here]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="http://placeimg.com/200/100/any/sepia" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bootstrap Development</h5>
+                        <p class="card-text">[text goes here]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /skills -->
+        <!-- projects -->
+        <h1 id="projects" class="display-6 mt-5 text-muted py-4">Projects</h1>
+        <p class="mb-6">At my core, I am a problem solver. I use C#, JavaScript, ASP.net, SQL, Bootstrap, HTML, and CSS to bring my projects to life.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /projects -->
 
         <hr />
 
-        <footer>
-            <ul>
-                <li><a href="https://github.com/mdesroches0501" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/desrochesmichael/"target="_blank">LinkedIn</a></li>
-            </ul>
-            <p>Copyright 2020, Michael DesRoches</p>
-        </footer>
-    </body>
+        <!-- footer -->
+        <div class="row py-3">
+            <div class="col-md-7">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/mdesroches0501">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/desrochesmichael/">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md text-end">
+                <small>&copy; 2021 Michael Bradley DesRoches</small>
+            </div>
+        </div><!-- /footer -->
+    </div><!-- /container -->
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
 </html>
